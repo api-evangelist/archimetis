@@ -1,8 +1,18 @@
 aid: archimetis
 name: Archimetis
-description: 'Archimetis is a company surfaced as a portfolio company of homebrew and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Archimetis builds an AI-powered Operational Reasoning System for refineries,
+  chemicals, and heavy process industries. The platform unifies data from
+  disparate operational sources — plant historians, linear programs, advanced
+  process control models, and digital engineering documents — into a single
+  intelligence layer, then continuously monitors operations, performs complex
+  engineering analysis, and applies industry best practices to surface
+  actionable insights for operators and engineers. Marketed as "See more.
+  Solve smarter," it targets margin improvement, cost savings, and process
+  safety across refining, chemicals, and other heavy industries. Founded in
+  2023, the company raised $11.5M led by Inspired Capital. Archimetis is an
+  enterprise B2B platform engaged through guided working sessions and demos;
+  it does not currently publish a public API, developer portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/archimetis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,31 @@ x-backed-by:
 - homebrew
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cdn.prod.website-files.com/6936f591299ba4cb1091f78b/69374c72d3b67f1779918b2f_webcliip-archimetis.jpg
 tags:
 - Company
-- Ai
+- AI
+- Industrial
+- Refining
+- Chemicals
+- Process Industries
+- Operational Intelligence
+- Energy
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,22 @@ maintainers:
 common:
 - type: Website
   url: https://www.archimetis.ai
+- type: About
+  url: https://www.archimetis.ai/#experts
+- type: Careers
+  url: https://www.archimetis.ai/careers-mission
+- type: PrivacyPolicy
+  url: https://www.archimetis.ai/legal/customer-partner-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/archimetis/
+- type: Twitter
+  url: https://x.com/archimetisAI
+- type: DomainSecurity
+  url: security/archimetis-domain-security.yml
+- type: WellKnown
+  url: well-known/archimetis-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
