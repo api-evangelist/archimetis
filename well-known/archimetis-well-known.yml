@@ -2,19 +2,24 @@ generated: '2026-07-18'
 method: searched
 source: live probes of https://www.archimetis.ai/.well-known/*
 host: https://www.archimetis.ai
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-notes: >-
-  No /.well-known/ discovery documents are published. Archimetis is an
-  enterprise operational-reasoning platform with no public API surface,
-  developer portal, or api/docs subdomain (api., docs., developer. all
-  fail to resolve). Recorded as a valid negative result.
+notes: No /.well-known/ discovery documents are published. Archimetis is an enterprise operational-reasoning
+  platform with no public API surface, developer portal, or api/docs subdomain (api., docs., developer.
+  all fail to resolve). Recorded as a valid negative result.
+hosts:
+- host: https://www.archimetis.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
